@@ -18,6 +18,11 @@ use App\Http\Controllers\NasaApiController;
 // Main route
 Route::get('/', [Controller::class, 'main'])->name("/");
 
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 // Categorías routes
 Route::get('categorias', [Controller::class, 'categoriasView'])->name('categoriasview');
 Route::get('api/categorias', [Controller::class, 'indexg']);

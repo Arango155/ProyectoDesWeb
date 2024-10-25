@@ -2,8 +2,8 @@
 
 @section('right')
 <div class="links">
-    <a class="btn btn-dark"  href="{{ route('categoriasview') }}">Categorias</a>
-    <a class="btn btn-dark"  href="{{route('librosView')}}">Libros</a>
+    <a class="btn btn-dark"  href="{{ route('login') }}">Iniciar sesion</a>
+    <a class="btn btn-dark"  href="{{route('register')}}">Registrate</a>
 </div>
 @endsection
 
@@ -17,7 +17,7 @@
     <div class="content">
         <h1>Consultoria en linea</h1>
         <p>"Desbloquee conocimientos, un clic a la vez: ¡su biblioteca, a su manera! "</p>
-        <form action="">
+        <form action="register">
 
             <button class="btn btn-primary">Comienza ahora!</button>
         </form>
