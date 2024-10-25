@@ -24,7 +24,7 @@ Route::get('/', [Controller::class, 'main'])->name("/");
 // });
 
 // Categorías routes
-Route::get('categorias', [Controller::class, 'categoriasView'])->name('categoriasview');
+Route::get('categorias', [Controller::class, 'categoriasView'])->name('categoriasView');
 Route::get('api/categorias', [Controller::class, 'indexg']);
 Route::put('/categorias/{id}', [Controller::class, 'update']);
 Route::post('/storeC', [Controller::class, 'storeC']);
