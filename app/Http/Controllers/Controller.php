@@ -129,6 +129,20 @@ class Controller extends BaseController
         return view('categorias');  // Return the blade view
     }
 
+
+        
+    
+
+    public function nasaapi() {
+        return view('nasaapi');  // Return the blade view
+    }
+
+    
+    public function productosapi() {
+        return view('productosapi');  // Return the blade view
+    }
+
+
     public function destroy($id) {
         $categoria = Categoria::find($id);
         if ($categoria) {

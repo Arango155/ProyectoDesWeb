@@ -2,12 +2,17 @@
 
 import { createApp } from 'vue';
 import NasaDataComponent from './components/NasaDataComponent.vue';
+import ProductosComponent from './components/ProductosComponent.vue';
 
 const nasa = createApp({});
 nasa.component('nasa-data-component', NasaDataComponent);
 nasa.mount('#nasa');
 
 
+
+const productos = createApp({});
+productos.component('productos-component', ProductosComponent);
+productos.mount('#productos');
 
 
 

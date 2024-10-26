@@ -3,19 +3,21 @@
         <h1>NASA Data</h1>
         <div v-if="loading">Loading...</div>
         <div v-else>
-            <table>
+            <table class="table table-sm table-bordered">
+            <thead>
                 <tr>
                     <th>Date</th>
                     <th>Title</th>
                     <th>Explanation</th>
                     <th>Image</th>
                 </tr>
+            </thead>  <tbody>
                 <tr>
                     <td>{{ nasaData.date }}</td>
                     <td>{{ nasaData.title }}</td>
                     <td>{{ nasaData.explanation }}</td>
                     <td><img :src="nasaData.url" alt="NASA Image" width="200"/></td>
-                </tr>
+                </tr></tbody>
             </table>
         </div>
     </div>

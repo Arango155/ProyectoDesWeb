@@ -76,8 +76,13 @@
 
 <div id="nasa">
     
-
+<!-- 
 <nasa-data-component></nasa-data-component>
 </div>
+
+<div id="productos">
+    <productos-component></productos-component>
+</div> -->
+
 
 @endsection

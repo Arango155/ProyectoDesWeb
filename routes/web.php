@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\NasaApiController;
+use App\Http\Controllers\ProductosApiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,10 +26,15 @@ Route::get('/', [Controller::class, 'main'])->name("/");
 
 // Categorías routes
 Route::get('categorias', [Controller::class, 'categoriasView'])->name('categoriasView');
+Route::get('nasaapi', [Controller::class, 'nasaapi'])->name('nasaapi');
+Route::get('productosapi', [Controller::class, 'productosapi'])->name('productosapi');
 Route::get('api/categorias', [Controller::class, 'indexg']);
 Route::put('/categorias/{id}', [Controller::class, 'update']);
 Route::post('/storeC', [Controller::class, 'storeC']);
 Route::delete('/categorias/{id}', [Controller::class, 'destroy']);
+
+// Nueva ruta para obtener los datos de productos
+Route::get('/productos-data', [ProductosApiController::class, 'getProductosData']);
 
 // NASA Data route
 Route::get('/nasa-data', [NasaApiController::class, 'getNasaData']);
